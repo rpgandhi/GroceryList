@@ -5,8 +5,7 @@ $(document).ready(function() {
     var totalArray = [];
 
     arrayInputs.forEach(function(item) {
-      var upperCaseItem = $("input#" + item).val().toUpperCase();
-      totalArray.push(upperCaseItem);
+      totalArray.push($("input#" + item).val().toUpperCase());
     });
 
     totalArray.sort();
